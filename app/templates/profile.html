@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block main %}
+<!--#2-->
+<div class="container">
+    <img src="{{ url_for('static', filename='images/profile-image.png') }}" alt="Profile Image" />
+  <h1>Carville Monteith</h1>
+  <p>@cmonteith</p>
+  <p>Kingston, Jamaica</p>
+  <p>{{date_joined}}</p>
+</div>
+<div class="page-data">
+  <p id="personal-para">
+    I am pursuing a career in Data Science but also consider Web Development a valuable asset.
+  </p>
+  <div class="stats-container">
+    <div class="stat">
+      <span class="number">| 20 |</span>
+      <span class="stat-label">Posts</span>
+    </div>
+    <div class="stat">
+      <span class="number">| 501 |</span>
+      <span class="stat-label">Following</span>
+    </div>
+    <div class="stat">
+      <span class="number">| 11.2k |</span>
+      <span class="stat-label">Followers</span>
+    </div>
+  </div>
+  <div>
+    <button>Follow</button>
+  </div>
+</div>
+{% endblock %}
